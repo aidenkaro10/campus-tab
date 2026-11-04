@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy · Campus Tab</title>
+    <meta name="description" content="What Campus Tab stores, what it sends, and how to delete it." />
+    <link rel="icon" type="image/png" href="icons/icon128.png" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --text: rgba(255, 255, 255, 0.92);
+        --dim: rgba(255, 255, 255, 0.62);
+        --accent: #8caff4;
+      }
+      body {
+        margin: 0;
+        background: #070912;
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 56px 24px 80px;
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 34px;
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        margin: 36px 0 8px;
+        font-size: 19px;
+      }
+      p, li {
+        color: var(--dim);
+      }
+      strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      a {
+        color: var(--accent);
+      }
+      .updated {
+        margin: 0 0 28px;
+        font-size: 14px;
+      }
+      .summary {
+        padding: 16px 18px;
+        border-radius: 14px;
+        background: rgba(140, 175, 244, 0.08);
+        border: 1px solid rgba(140, 175, 244, 0.2);
+      }
+      .summary p {
+        margin: 0;
+        color: var(--text);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+      }
+      th, td {
+        padding: 9px 10px 9px 0;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      th {
+        color: var(--text);
+        font-weight: 600;
+      }
+      td {
+        color: var(--dim);
+      }
+      code {
+        font: 13.5px ui-monospace, 'SF Mono', Menlo, monospace;
+        color: var(--text);
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 28px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./">← Back to Campus Tab</a>
+      <h1>Privacy</h1>
+      <p class="updated">Last updated November 4, 2026</p>
+
+      <div class="summary">
+        <p>
+          Campus Tab has no accounts, no analytics and no server of its own. Everything
+          it saves stays on your device. Nothing you do in it is collected, sold or
+          shared.
+        </p>
+      </div>
+
+      <h2>What it saves, and where</h2>
+      <p>
+        All of this is stored only in your own browser (browser storage and
+        IndexedDB on this device). It never leaves your device.
+      </p>
+      <ul>
+        <li>The school you picked and the accent colour</li>
+        <li>Your quick links, wallpaper choice and any wallpapers you upload</li>
+        <li>Campus photos fetched for your school</li>
+        <li>Clock, focus timer and widget settings</li>
+      </ul>
+
+      <h2>What it sends over the internet</h2>
+      <ul>
+        <li>
+          <strong>The list of universities</strong>, loaded from the same site as the
+          app when you open the school picker.
+        </li>
+        <li>
+          <strong>One lookup on Wikipedia</strong> when you pick a school, to find
+          freely licensed photos of its campus (from Wikipedia, Wikidata and Wikimedia
+          Commons). The request contains the school's name. It happens once per
+          school; after that the photos load from your device. Wikimedia's own
+          <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noreferrer">privacy policy</a>
+          covers those requests.
+        </li>
+        <li>
+          <strong>Links you click</strong> (your quick links, search, the apps
+          menu) open those sites as any link would.
+        </li>
+      </ul>
+      <p>There are no cookies, ads, trackers or third-party analytics.</p>
+
+      <h2>The Chrome extension's permissions</h2>
+      <p>
+        Installed as an extension, Campus Tab asks for these permissions. Each is used
+        only to draw your new tab page, on your device.
+      </p>
+      <table>
+        <tr><th>Permission</th><th>Used for</th></tr>
+        <tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Saving your settings and wallpapers on your device</td></tr>
+        <tr><td><code>bookmarks</code></td><td>Showing your bookmarks bar on the new tab</td></tr>
+        <tr><td><code>topSites</code></td><td>Showing your most-visited sites</td></tr>
+        <tr><td><code>tabs</code>, <code>tabGroups</code></td><td>Showing your open tabs and tab groups, and switching between them</td></tr>
+        <tr><td><code>favicon</code></td><td>Showing site icons next to links and tabs</td></tr>
+        <tr><td><code>alarms</code>, <code>notifications</code></td><td>Letting the focus timer tell you when a session ends</td></tr>
+      </table>
+      <p>
+        None of this information is read for any other purpose, stored anywhere else,
+        or sent anywhere.
+      </p>
+
+      <h2>Deleting your data</h2>
+      <p>
+        Open <strong>Settings</strong> (the gear, top right) and choose
+        <strong>Delete all my data</strong> at the bottom. That removes everything
+        Campus Tab saved on your device. Uninstalling the extension, or clearing this
+        site's data in your browser, does the same.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        Campus Tab is made for university students. It doesn't collect personal
+        information from anyone, including children.
+      </p>
+
+      <h2>Changes and contact</h2>
+      <p>
+        If this policy changes, the date at the top changes with it. Questions? Reach
+        the developer through
+        <a href="https://github.com/aidenkaro10" target="_blank" rel="noreferrer">github.com/aidenkaro10</a>.
+      </p>
+    </main>
+  </body>
+</html>
